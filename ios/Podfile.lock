@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - pedometer_2 (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - pedometer_2 (from `.symlinks/plugins/pedometer_2/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  pedometer_2:
+    :path: ".symlinks/plugins/pedometer_2/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
+  pedometer_2: dbedf4f42eb698358d1f6231ef97e29ae6b0411f
+
+PODFILE CHECKSUM: 05aa7d980a13c918b5d7fe169fd70de381a3b0af
+
+COCOAPODS: 1.17.0
