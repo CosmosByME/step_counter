@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lottie/lottie.dart';
 
 import '../../../error/presentation/view/error_page.dart';
 import '../../../steps/presentation/bloc/step_bloc.dart';
