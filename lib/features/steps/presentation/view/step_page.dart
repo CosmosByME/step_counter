@@ -29,7 +29,6 @@ class StepPage extends StatelessWidget {
             builder: (context, state) {
               final steps = state is StepListening ? state.step : 0;
               const goal = 8000;
-              final isActive = state is StepListening;
 
               return Padding(
                 padding: const EdgeInsets.all(16),
