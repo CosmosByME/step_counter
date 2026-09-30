@@ -5,6 +5,7 @@ import 'package:step_counter/features/steps/presentation/widgets/activity_stats_
 import 'package:step_counter/features/steps/presentation/widgets/hero_step_tracker.dart';
 import 'package:step_counter/features/steps/presentation/widgets/weekly_activity_chart.dart';
 
+import '../../../user_details/presentation/cubit/user_details_cubit.dart';
 import '../bloc/step_bloc.dart';
 
 class StepPage extends StatelessWidget {
@@ -37,6 +38,14 @@ class StepPage extends StatelessWidget {
                   children: [
                     const DashboardHeader(),
                     const SizedBox(height: 20),
+                    BlocBuilder<UserDetailsCubit, UserDetailsState>(builder: (context, state) {
+                      if (state is UserDetailsFetched) {
+                        return Container(
+                          color: Theme.of(context).colorScheme.primaryContainer,
+                          child: Text('height: ${state.heightCm}'),
+                        );
+                      } return SizedBox.shrink();
+                    }),
                     HeroStepTracker(steps: steps, goal: goal),
                     const SizedBox(height: 20),
                     ActivityStatsRow(steps: steps),
